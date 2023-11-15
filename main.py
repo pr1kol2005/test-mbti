@@ -356,6 +356,10 @@ def start(prev_main_menu=None, prev_quest_win=None, prev_results_win=None):
     mw.start_bt.clicked.connect(lambda: qw.open_window())
 
 
+def arithmetical_mean(list):
+    return sum(list) / len(list)
+
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     start()
